@@ -1,0 +1,59 @@
+.title ,h1 {
+    font-family: Monoton;
+    font-size: 5em;
+    margin: 0.2em;
+    color: #feda4a;
+    text-align: center;
+}
+
+.top {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 0px;
+  background-color: #202024;
+  border: 0px solid #e3e3e3;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.subtitle, h2 {
+  font-family: Monoton;
+  font-size: 3.5em;
+  color:#000;
+  text-align: center;
+}
+
+.code {
+  font-size:1.25em;
+}
+
+.purple {
+  color: #8A2BE2;
+}
+
+.blue {
+  color: #0066ff;
+}
+
+.yellow {
+  color: #FFA500;
+}
+
+.green {
+  color: #6B8E23;
+}
+
+.report {
+  font-size: 1.5em;
+}
+
+.reportBold {
+  font-weight: bold;
+}
+
+.reportBoldEx {
+  font-weight: bold;
+  color: #f00;
+  text-decoration: underline;
+}

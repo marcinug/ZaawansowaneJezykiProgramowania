@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZaawansowaneJezykiProgramowaniaWTF</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container-fluid top">
+          <h1 class="title">JavaScript WTF</h1>
+        </div>
+      </div>
+      <div class="row display-flex">
+        <div class="container medium col-lg-6 col-sm-6 col-xs-6">
+          <h2 class="subtitle">Code</h2>
+          <div class="jumbotron">
+            <div class="code"><span class="blue">this</span><span class="yellow">.fromRGB</span> = <span class="blue">function</span> (r, g, b, flags) {</div>
+            <div class="code"><span class="purple">if</span>(r !== <span class="blue">null</span>) {</div>
+            <div class="code"><span class="purple">if</span>(<span class="yellow">isNaN</span>(r)){ <span class="purple">return</span> <span class="blue">false</span>; }</div>
+            <div class="code">r = <span class="green">Math</span>.<span class="yellow">max</span>(0, <span class="green">Math</span>.<span class="yellow">min</span>(255, r));}</div>
+            <div class="code"><span class="purple">if</span>(g !== <span class="blue">null</span>) {</div>
+            <div class="code"><span class="purple">if</span>(<span class="yellow">isNaN</span>(g)){ <span class="purple">return</span> <span class="blue">false</span>; }</div>
+            <div class="code">r = <span class="green">Math</span>.<span class="yellow">max</span>(0, <span class="green">Math</span>.<span class="yellow">min</span>(255, g));}</div>
+            <div class="code"><span class="purple">if</span>(b !== <span class="blue">null</span>) {</div>
+            <div class="code"><span class="purple">if</span>(<span class="yellow">isNaN</span>(b)){ <span class="purple">return</span> <span class="blue">false</span>; }</div>
+            <div class="code">b = <span class="green">Math</span>.<span class="yellow">max</span>(0, <span class="green">Math</span>.<span class="yellow">min</span>(255, b));}</div>
+            <div class="code">var hsv = RGB_HSV(</div>
+            <div class="code">r===<span class="blue">null</span> ? <span class="blue">this</span>.rgb[0]: r,</div>
+            <div class="code">g===<span class="blue">null</span> ? <span class="blue">this</span>.rgb[1]: g </div>
+            <div class="code">b===<span class="blue">null</span> ? <span class="blue">this</span>.rgb[2] : b);</div>
+            <div class="code">);</div>
+            <div class="code"><span class="purple">if</span> (hsv[0] !== <span class="blue">null</span>) { </div>
+            <div class="code"><span class="blue">this</span>.hsv[0] = <span class="green">Math</span>.<span class="yellow">max</span>(0, <span class="green">Math</span>.<span class="yellow">min</span>(360, hsv[0]));}</div>
+            <div class="code"><span class="purple">if</span> (hsv[2] !== 0) {</div>
+            <div class="code"><span class="blue">this</span>.hsv[1] = hsv[1]===<span class="blue">null</span> ? <span class="blue">null</span> : <span class="green">Math</span>.<span class="yellow">max</span>(0, <span class="blue">this</span>.minS,
+              <span class="green">Math</span>.<span class="yellow">min</span>(100, <span class="blue">this</span>.maxS, hsv[1]));}</div>
+            <div class="code"><span class="blue">this</span>.hsv[2] = hsv[2]===<span class="blue">null</span> ? <span class="blue">null</span> : <span class="green">Math</span>.<span class="yellow">max</span>(0, <span class="blue">this</span>.minV,
+              <span class="green">Math</span>.<span class="yellow">min</span>(100, <span class="blue">this</span>.maxV, hsv[2]));</div>
+            <div class="code">var rgb = HSV_RGB(<span class="blue">this</span>.hsv[0], <span class="blue">this</span>.hsv[1], <span class="blue">this</span>.hsv[2]);</div>
+            <div class="code"><span class="blue">this</span>.rgb[0] = rgb[0];</div>
+            <div class="code"><span class="blue">this</span>.rgb[1] = rgb[1];</div>
+            <div class="code"><span class="blue">this</span>.rgb[2] = rgb[2];</div>
+            <div class="code"><span class="blue">this</span>.exportColor(flags);</div>
+            <div class="code">};</div>
+          </div>
+      </div>
+      <div class="container medium col-lg-6 col-sm-6 col-xs-6">
+        <h2 class="subtitle">complexity-report</h2>
+        <div class="jumbotron">
+          <div class="report">Function anonymous.fromRGB</div>
+          <div class="report">Physical LOC: <span class="reportBold">35</span></div>
+          <div class="report">Logical LOC: <span class="reportBold">23</span></div>
+          <div class="report">Parameter count: <span class="reportBold">4</span></div>
+          <div class="report">Cyclomatic complexity: <span class="reportBoldEx">14</span></div>
+          <div class="report">Cyclomatic complecity density: <span class="reportBoldEx">60.86956521739131%</span></div>
+          <div class="report">Halstead difficulty: <span class="reportBold">25.442307692307693</span></div>
+          <div class="report">Halstead volume: <span class="reportBold">1307.9671693209664</span></div>
+          <div class="report">Halstead effort: <span class="reportBold">33277.70317330074</span></div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
